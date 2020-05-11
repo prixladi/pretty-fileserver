@@ -1,0 +1,14 @@
+version: '3.4'
+  
+services:
+  ftp:
+    image: shamyr/ftp
+    ports:
+      - 80:80
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes: 
+      - ./ftp:/usr/share/nginx/html/ftp
+      - ./assets:/usr/share/nginx/html/assets
+      - ./js:/usr/share/nginx/html/js
