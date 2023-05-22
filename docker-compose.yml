@@ -2,7 +2,7 @@ version: '3.4'
   
 services:
   ftp:
-    image: shamyr/ftp
+    image: pretty-fileserver
     ports:
       - 80:80
     build:
